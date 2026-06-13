@@ -1,10 +1,6 @@
 /* ========== ESTILOS ESPECÍFICOS DO FORMULÁRIO (ENVIAR.HTML) ========== */
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: #f4f7f4;
 }
 
@@ -15,9 +11,10 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-top: 5px solid var(--verde-escuro);
-    margin: 0 auto;
+
+    margin: 30px auto;
 }
 
 .card h2 {
@@ -64,4 +61,13 @@ button[type="submit"]:hover {
     max-height: 250px;
     border-radius: 8px;
     margin-top: 10px;
+}
+
+.mensagem-erro {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c62828;
 }

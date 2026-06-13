@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ação Enviada com Sucesso!</title>
-    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="global.css">
     <style>
         body {
             display: flex;
@@ -117,8 +118,24 @@
     </style>
 </head>
 <body>
+<header>
+    <div class="header-content">
+        <img src="img/logobranca.png" alt="logo conecta verde"
+            style="width:160px;">
+
+        <button id="btn-menu">☰</button>
+        <nav id="menu-lateral" class="menu-fechado">
+            <a href="index.html">Feed</a>
+            <a href="profile.html">Perfil</a>
+            <a href="enviar.html">Nova publicação</a>
+            <a href="ranking.html">Ranking</a>
+            
+            
+        </nav>
+    </div>
+</header>
     <div class="top-nav">
-        <a href="/perfil">Meu Perfil</a>
+        <a href="profile.html">Meu Perfil</a>
     </div>
     <div class="card">
         <div class="success-icon">✅</div>
@@ -142,9 +159,10 @@
         </div>
 
         <div class="btn-group">
-            <a href="/" class="btn btn-primary">Ver Feed</a>
-            <a href="/ranking" class="btn btn-secondary">Ver Ranking</a>
+            <a href="index.html" class="btn btn-primary">Ver Feed</a>
+            <a href="ranking.html" class="btn btn-secondary">Ver Ranking</a>
         </div>
     </div>
+<script src="main.js"></script>    
 </body>
 </html>

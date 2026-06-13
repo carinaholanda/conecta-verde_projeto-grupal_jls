@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar Ação Verde</title>
-    <link rel="stylesheet" href="/static/css/global.css">
-    <link rel="stylesheet" href="/static/css/enviar.css">
+    <title>Conecta Verde</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="enviar.css">
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <img src="img/logobranca.png" alt="logo conecta verde"
+                style="width:160px;">
 
-    <div class="top-nav">
-        <a href="/perfil">Meu Perfil</a>
-    </div>
+            <button id="btn-menu">☰</button>
+            <nav id="menu-lateral" class="menu-fechado">
+                <a href="index.html">Feed</a>
+                <a href="profile.html">Perfil</a>
+                <a href="ranking.html">Ranking</a>
+            </nav>
+        </div>
+    </header>
 
     <div class="card">
         <h2>Minha Ação Sustentável</h2>
+
+
         
-        {% if erro %}
-        <div style="background: #ffebee; color: #c62828; padding: 12px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #c62828;">
-            ⚠️ {{ erro }}
-        </div>
-        {% endif %}
-        <form action="/enviar" method="POST" enctype="multipart/form-data">
+<!-- {% if erro %}
+     <div class="mensagem-erro">
+    ⚠️ {{ erro }}
+    </div>
+    {% endif %}  
+-->
+
+        <form action="enviar.html" method="POST" enctype="multipart/form-data"> 
             
             <label for="descricao">O que você mudou hoje? (Ex: 5S na bancada)</label>
             <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva brevemente sua ação sustentável..." required></textarea>
@@ -36,6 +50,6 @@
         </form>
     </div>
 
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="main.js"></script>
 </body>
 </html>

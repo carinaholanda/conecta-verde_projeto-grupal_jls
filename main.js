@@ -28,3 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+            const botao = document.getElementById('btn-menu');
+            const menu = document.getElementById('menu-lateral');
+
+            botao.addEventListener('click', () => {
+                menu.classList.toggle('menu-aberto');
+});

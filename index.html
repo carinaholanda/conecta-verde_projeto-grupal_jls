@@ -3,61 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed Sustentável - Empresa</title>
-    <link rel="stylesheet" href="/static/css/global.css">
-    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Conecta Verde</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
 
-    <header>
-        <div style="display:flex; justify-content:space-between; align-items:center; max-width:500px; margin:0 auto;">
-            <h1>EcoFeed 🌿</h1>
-            <a href="/perfil" style="color:white; background:rgba(255,255,255,0.15); padding: 8px 14px; border-radius: 8px; text-decoration:none; font-size:14px;">Meu Perfil</a>
-        </div>
-    </header>
+<header>
+    <div class="header-content">
+        <img src="img/logobranca.png" alt="logo conecta verde"
+            style="width:160px;">
 
-    <div class="feed-container">
-        
-        <div class="post-card">
-            <div class="post-header">
-                <div class="avatar">AS</div>
-                <span>Ana Silva</span>
-            </div>
-            <div class="post-image-container">
-                <img src="https://via.placeholder.com/250x250?text=Antes+5S" alt="Antes">
-                <img src="https://via.placeholder.com/250x250?text=Depois+5S" alt="Depois">
-            </div>
-            <div class="post-content">
-                <span class="tag">#Metodologia5S</span>
-                <p>Organizei minha bancada de testes hoje. Tudo limpo e etiquetado para facilitar o próximo turno! 🚀</p>
-            </div>
-            <div class="post-actions">
-                <button class="btn-action">❤️ Curtir</button>
-                <button class="btn-action">💬 Comentar</button>
-            </div>
-        </div>
+        <button id="btn-menu">☰</button>
+        <nav id="menu-lateral" class="menu-fechado">
+            <a href="profile.html">Perfil</a>
+            <a href="enviar.html">Nova publicação</a>
+            <a href="ranking.html">Ranking</a>
 
-        <div class="post-card">
-            <div class="post-header">
-                <div class="avatar">LP</div>
-                <span>Lucas Pereira</span>
-            </div>
-            <div class="post-image-container" style="justify-content: center;">
-                <img src="https://via.placeholder.com/500x250?text=Copo+Reutilizável" alt="Ação" style="width: 100%;">
-            </div>
-            <div class="post-content">
-                <span class="tag">#ConsumoConsciente</span>
-                <p>Menos um copo descartável no mundo por dia! Minha nova caneca já está na ativa. ☕</p>
-            </div>
-            <div class="post-actions">
-                <button class="btn-action">❤️ Curtir</button>
-                <button class="btn-action">💬 Comentar</button>
-            </div>
-        </div>
-
+        </nav>
     </div>
+</header>
+    <main>
+        <div class="feed-container">
+            
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="avatar">AS</div>
+                    <span>Ana Silva</span>
+                </div>
+                <div class="post-image-container">
+                    <img src="img/antes-bancada.png" alt="Antes">
+                    <img src="img/depois-bancada.png" alt="Depois">
+                </div>
+                <div class="post-content">
+                    <span class="tag">#Metodologia5S</span>
+                    <p>Organizei minha bancada de testes hoje. Tudo limpo e etiquetado para facilitar o próximo turno! 🚀</p>
+                </div>
+                <div class="post-actions">
+                    <button class="btn-action">
+                        <img src="img/curtir.png" alt="curtir"
+                        style="width: 20px;"> Curtir</button>
+                    <button class="btn-action">
+                        <img src="img/comentar.png" alt="comentar"
+                        style="width: 20px;"> Comentar</button>
+                </div>
+            </div>
 
-    <a href="/enviar" class="btn-flutuante">+</a>
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="avatar">LP</div>
+                    <span>Lucas Pereira</span>
+                </div>
+                <div class="post-image-container" style="justify-content: center;">
+                    <img src="img/aderindo-caneca.webp">
+                </div>
+                <div class="post-content">
+                    <span class="tag">#ConsumoConsciente</span>
+                    <p>Menos um copo descartável no mundo por dia! Minha nova caneca já está na ativa. ☕</p>
+                </div>
+                <div class="post-actions">
+                    <button class="btn-action">
+                        <img src="img/curtir.png" alt="curtir"
+                        style="width: 20px;"
+                        >
+                        Curtir</button>
+                    <button class="btn-action">
+                        <img src="img/comentar.png" alt="comentar"
+                        style="width: 20px;">Comentar</button>
+                </div>
+            </div>
 
+        </div>
+    </main>
+
+<a href="ranking.html" class="btn-flutuante btn-ranking">
+    <img src="img/ranking.png" alt="">
+</a>
+
+<a href="enviar.html" class="btn-flutuante btn-enviar">
+    <img src="img/mais.png" alt="">
+</a>
+<script src="main.js"></script>
 </body>
 </html>

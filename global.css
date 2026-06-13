@@ -34,7 +34,7 @@ header {
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: relative;;
     top: 0;
     z-index: 100;
 }
@@ -65,6 +65,36 @@ header h1 {
 .top-nav a:hover {
     background: rgba(255, 255, 255, 0.3);
 }
+
+.header-content {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+/* ========== menu sanduiche ========== */
+#btn-menu {
+    width: auto;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#btn-menu:hover {
+    background: transparent;
+}
+
+#btn-menu:active {
+    color: #f4d03f; /* amarelo */
+}
+
 
 /* ========== CONTAINERS ========== */
 .container {
@@ -179,4 +209,57 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+
+/* ========== cabeçalho padronizado ========== */
+#btn-menu {
+    width: auto;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+#btn-menu:hover {
+    background: transparent;
+}
+
+.menu-fechado {
+    display: none;
+}
+
+.menu-aberto {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    width: 180px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    z-index: 1000;
+}
+
+
+.menu-aberto a {
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-aberto a:last-child {
+    border-bottom: none;
+}
+
+.menu-aberto a:hover {
+    background: #e8f5e9;
 }

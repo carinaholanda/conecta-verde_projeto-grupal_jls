@@ -2,8 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="global.css">
     <title>Meu Perfil Sustentável</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <style>
         .profile-header { text-align: center; padding: 30px 20px; background: white; border-bottom: 5px solid #2d5a27; }
         .profile-pic { width: 100px; height: 100px; background: #2d5a27; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; margin: 0 auto 15px; border: 4px solid #e8f5e9; }
@@ -20,13 +22,27 @@
         .badge-list { display: flex; gap: 15px; justify-content: center; margin-top: 10px; }
         .badge-item { filter: grayscale(100%); opacity: 0.5; transition: 0.3s; text-align: center; font-size: 10px; }
         .badge-item.earned { filter: grayscale(0%); opacity: 1; }
+
+   
+
     </style>
 </head>
 <body>
+<header>
+    <div class="header-content">
+        <img src="img/logobranca.png" alt="logo conecta verde"
+            style="width:160px;">
 
-    <div class="top-nav" style="padding-top: 0;">
-        <a href="/">Ver Feed</a>
+        <button id="btn-menu">☰</button>
+        <nav id="menu-lateral" class="menu-fechado">
+            <a href="index.html">Feed</a>
+            <a href="enviar.html">Nova publicação</a>
+            <a href="ranking.html">Ranking</a>
+        </nav>
     </div>
+</header>
+
+
 
     <div class="profile-header">
         <div class="profile-pic">A</div>
@@ -72,8 +88,8 @@
             </div>
         </div>
 
-        <a href="/" class="nav-link" style="display: block; margin-top: 30px; text-align: center;">Ver Feed</a>
-    </div>
 
+    </div>
+<script src="main.js"></script>
 </body>
 </html>
