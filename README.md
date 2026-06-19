@@ -1,2 +1,2 @@
 Projeto em grupo - Jornada Liga STEAM
-Grupo: Carina Holanda, Elciane Silva e Thaila Fantyne
+Grupo: Carina Holanda, Elciane Correia e Thaila Fantyne
